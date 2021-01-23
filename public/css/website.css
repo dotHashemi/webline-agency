@@ -1,8 +1,7 @@
 @font-face {
     font-family: IranYekan;
     src: url("../fonts/eot/iranyekanwebregularfanum.eot");
-    src: url("../fonts/eot/iranyekanwebregularfanum.eot?#iefix")
-            format("embedded-opentype"),
+    src: url("../fonts/eot/iranyekanwebregularfanum.eot?#iefix") format("embedded-opentype"),
         url("../fonts/woff/iranyekanwebregularfanum.woff") format("woff"),
         url("../fonts/ttf/iranyekanwebregularfanum.ttf") format("truetype");
     font-weight: normal;
@@ -11,8 +10,7 @@
 @font-face {
     font-family: IranYekan;
     src: url("../fonts/eot/iranyekanwebboldfanum.eot");
-    src: url("../fonts/eot/iranyekanwebboldfanum.eot?#iefix")
-            format("embedded-opentype"),
+    src: url("../fonts/eot/iranyekanwebboldfanum.eot?#iefix") format("embedded-opentype"),
         url("../fonts/woff/iranyekanwebboldfanum.woff") format("woff"),
         url("../fonts/ttf/iranyekanwebboldfanum.ttf") format("truetype");
     font-weight: bold;
@@ -21,8 +19,7 @@
 @font-face {
     font-family: IranYekan;
     src: url("../fonts/eot/iranyekanweblightfanum.eot");
-    src: url("../fonts/eot/iranyekanweblightfanum.eot?#iefix")
-            format("embedded-opentype"),
+    src: url("../fonts/eot/iranyekanweblightfanum.eot?#iefix") format("embedded-opentype"),
         url("../fonts/woff/iranyekanweblightfanum.woff") format("woff"),
         url("../fonts/ttf/iranyekanweblightfanum.ttf") format("truetype");
     font-weight: 300;
@@ -31,8 +28,7 @@
 @font-face {
     font-family: IranYekan;
     src: url("../fonts/eot/iranyekanwebmediumfanum.eot");
-    src: url("../fonts/eot/iranyekanwebmediumfanum.eot?#iefix")
-            format("embedded-opentype"),
+    src: url("../fonts/eot/iranyekanwebmediumfanum.eot?#iefix") format("embedded-opentype"),
         url("../fonts/woff/iranyekanwebmediumfanum.woff") format("woff"),
         url("../fonts/ttf/iranyekanwebmediumfanum.ttf") format("truetype");
     font-weight: 500;
@@ -41,8 +37,7 @@
 @font-face {
     font-family: IranYekan;
     src: url("../fonts/eot/iranyekanwebthinfanum.eot");
-    src: url("../fonts/eot/iranyekanwebthinfanum.eot?#iefix")
-            format("embedded-opentype"),
+    src: url("../fonts/eot/iranyekanwebthinfanum.eot?#iefix") format("embedded-opentype"),
         url("../fonts/woff/iranyekanwebthinfanum.woff") format("woff"),
         url("../fonts/ttf/iranyekanwebthinfanum.ttf") format("truetype");
     font-weight: 100;
@@ -51,8 +46,7 @@
 @font-face {
     font-family: IranYekan;
     src: url("../fonts/eot/iranyekanwebblackfanum.eot");
-    src: url("../fonts/eot/iranyekanwebblackfanum.eot?#iefix")
-            format("embedded-opentype"),
+    src: url("../fonts/eot/iranyekanwebblackfanum.eot?#iefix") format("embedded-opentype"),
         url("../fonts/woff/iranyekanwebblackfanum.woff") format("woff"),
         url("../fonts/ttf/iranyekanwebblackfanum.ttf") format("truetype");
     font-weight: 900;
@@ -120,9 +114,11 @@ body {
         height: 80vw;
         /* min-height: 20rem; */
     }
+
     .navbar-brand-mobile {
         display: block;
     }
+
     .navbar-brand {
         display: none;
     }
@@ -134,17 +130,21 @@ body {
     .m-mobile {
         margin: 20px 20px 0px 20px;
     }
+
     .navbar-tag {
         font-size: 0.6rem;
     }
+
     .navbar-brand {
         font-size: 1rem;
         margin-right: 0;
     }
+
     .mobile-text-center {
         text-align: center !important;
     }
 }
+
 @media (min-width: 768px) {
     .portfolio-image {
         transition: transform 0.2s;
@@ -153,12 +153,15 @@ body {
         height: 40vh;
         /* min-height: 20rem; */
     }
+
     .navbar-brand-mobile {
         display: none;
     }
+
     .navbar-brand {
         display: block;
     }
+
     .navbar-brand {
         font-size: 1.1rem;
         margin-right: 0;
@@ -258,18 +261,16 @@ footer a:hover {
     padding-right: 0 !important;
 }
 
+.text-secondary {
+    font-size: .9rem;
+}
+
 /* #endregion */
 
 .portfolio-header-box,
 .page-header-box {
     padding: 15vh 0 10vh 0vh;
 }
-
-/* .page-header-box {
-    background-color: var(--light-grey);
-    background: #ededed
-        url(http://i-wordpress.ir/demo/nuovo/wp-content/uploads/2018/03/lines-web-pattern.png?id=707) !important;
- } */
 
 img {
     width: 100%;

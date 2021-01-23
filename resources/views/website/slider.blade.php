@@ -13,12 +13,15 @@ $settings = request()->get("settings");
     </ol>
 
     <div class="carousel-inner">
-        @for($i = 0; $i < count($slides); $i++) <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
+    @for($i = 0; $i < count($slides); $i++) 
+        <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
             <a href="{{ $slides[$i]->link }}">
                 <img class="d-block w-100" src="{{ $slides[$i]->thumbnail }}" alt="{{ $slides[$i]->title }}" />
             </a>
-    </div>
+        </div>
     @endfor
+    </div>
+    
 </div>
 
 <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
@@ -29,6 +32,5 @@ $settings = request()->get("settings");
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
 </a>
-
 
 @endif

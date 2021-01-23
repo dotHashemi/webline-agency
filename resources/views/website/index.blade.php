@@ -18,27 +18,23 @@
 
             <div class="col-lx-3 col-lg-3 col-md-4 col-sm-6 mb-3">
                 <div class="cart service-cart border border-light-1">
-                    <div class="cart-body">
+                    <a href="{{ $service->path() }}">
+                        <div class="cart-body">
 
-                        <div class="service-cart-icon text-secondary mt-3">
-                            <i class="{{ $service->icon }}"></i>
+                            <div class="service-cart-icon mt-3">
+                                <i class="{{ $service->icon }}"></i>
+                            </div>
+
+                            <h5 class="mb-4">
+                                {{ $service->title }}
+                            </h5>
+
+                            <p class="my-3 text-secondary">
+                                {{ $service->description }}
+                            </p>
+
                         </div>
-
-                        <h5 class="mb-4">
-                            {{ $service->title }}
-                        </h5>
-
-                        <p class="my-3 text-secondary">
-                            {{ $service->description }}
-                        </p>
-
-                        <a href="{{ $service->path() }}">
-                            <button class="btn btn-sm btn-webline mt-4">
-                                اطلاعات بیشتر
-                            </button>
-                        </a>
-
-                    </div>
+                    </a>
                 </div>
             </div>
 
