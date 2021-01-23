@@ -25,7 +25,7 @@
                                 <i class="{{ $service->icon }}"></i>
                             </div>
 
-                            <h5 class="mb-4">
+                            <h5 class="mb-4 text-red">
                                 {{ $service->title }}
                             </h5>
 

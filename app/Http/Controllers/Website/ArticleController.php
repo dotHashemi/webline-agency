@@ -64,11 +64,10 @@ class ArticleController extends AppController
         if (!$article)
             return redirect()->route("app.articles.index");
 
-        $article->update([
-            'view' => $article->view + 1
-        ]);
+        $article->view = $article->view + 1;
+        $article->save();
 
-        $article->date = Jalalian::fromCarbon(new Carbon($article->date))->format('%d %B %y');
+        $article->date = Jalalian::fromCarbon(new Carbon($article->created))->format('%d %B %y');
 
         $valid = false;
         if ($article->access == "normal") {
@@ -86,8 +85,8 @@ class ArticleController extends AppController
                     $valid = true;
             }
 
-            #TODO; add for register and vip articles
         } else {
+            #TODO; add for register and vip articles
         }
 
         $article->categories = $article->categories->pluck('title', 'id')->toArray();

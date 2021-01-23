@@ -1,4 +1,9 @@
-@extends('website.layouts.master') @section('content')
+@extends('website.layouts.master', [
+    'meta' => $article->title,
+    'title' => $article->title
+]) 
+
+@section('content')
 
 <div class="border-bottom page-header-box">
 

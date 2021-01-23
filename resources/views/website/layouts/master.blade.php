@@ -5,35 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <meta name="description" content="آژانس دیجیتال مارکتینگ وبلاین" />
+    <meta name="description" content="{{ ucfirst($meta ?? 'تحولی نو') }}" />
     <meta name="author" content="Webline Agency" />
     
     <title>
-        آژانس دیجیتال مارکتینگ وبلاین
-         
-        @switch(Route::current()->getName())
-            @case('app.index')
-                @break
-
-            @case('app.portfolio.index')
-                | 
-                نمونه‌کارها
-                @break
-
-            @case('app.about')
-                | 
-                درباره‌ی وبلاین
-                @break
-
-            @case('app.secrets')
-                | 
-                4 راز رشد شگفت‌انگیزترین کسب و کارها
-                @break
-
-            @default
-                | 
-                تحولی نو
-        @endswitch
+        آژانس دیجیتال مارکتینگ وبلاین | {{ ucfirst($title ?? 'تحولی نو') }}
     </title>
 
     <link rel="stylesheet" href="/components/bootstrap/css/bootstrap.min.css" />
