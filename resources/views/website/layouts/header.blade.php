@@ -4,7 +4,6 @@
         <div class="d-flex align-items-center">
             <a class="navbar-brand" href="{{ url('/') }}">آژانس دیجیتال مارکتینگ وبلاین</a>
             <a class="navbar-brand-mobile" href="{{ url('/') }}">آژانس وبلاین</a>
-            <span class="badge btn-webline mx-2 navbar-tag">نسخه‌ی آزمایشی</span>
         </div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

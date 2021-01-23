@@ -10,25 +10,28 @@
     
     <title>
         آژانس دیجیتال مارکتینگ وبلاین
-         | 
+         
         @switch(Route::current()->getName())
             @case('app.index')
-                صفحه‌ی نخست
                 @break
 
             @case('app.portfolio.index')
+                | 
                 نمونه‌کارها
                 @break
 
             @case('app.about')
+                | 
                 درباره‌ی وبلاین
                 @break
 
             @case('app.secrets')
+                | 
                 4 راز رشد شگفت‌انگیزترین کسب و کارها
                 @break
 
             @default
+                | 
                 تحولی نو
         @endswitch
     </title>
