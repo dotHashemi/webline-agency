@@ -57,15 +57,13 @@
                         </a>
                     </div>
 
-                    <div class="mt-4">
-                        <a href="{{ route('app.portfolio.show', ['slug' => $portfolio->slug]) }}" class="portfolio-cart-title">
-                            <h5>
-                                {{ $portfolio->title }}
-                            </h5>
+                    <div class="pt-2">
+                        <a href="{{ route('app.portfolio.show', ['slug' => $portfolio->slug]) }}" class="item-title">
+                            {{ $portfolio->title }}
                         </a>
                     </div>
 
-                    <div class="portfolio-cart-category">
+                    <div class="item-subtitle">
                         {{ $portfolio->service }}
                     </div>
                 </div>

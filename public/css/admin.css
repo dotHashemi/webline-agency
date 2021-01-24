@@ -1,61 +1,28 @@
 @font-face {
-    font-family: IranYekan;
-    src: url("../fonts/eot/iranyekanwebregularfanum.eot");
-    src: url("../fonts/eot/iranyekanwebregularfanum.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/woff/iranyekanwebregularfanum.woff") format("woff"),
-        url("../fonts/ttf/iranyekanwebregularfanum.ttf") format("truetype");
+    font-family: Vazir;
+    src: url("../fonts/eot/Vazir-Regular.eot");
+    src: url("../fonts/eot/Vazir-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/woff/Vazir-Regular.woff") format("woff"),
+        url("../fonts/ttf/Vazir-Regular.ttf") format("truetype");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: IranYekan;
-    src: url("../fonts/eot/iranyekanwebboldfanum.eot");
-    src: url("../fonts/eot/iranyekanwebboldfanum.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/woff/iranyekanwebboldfanum.woff") format("woff"),
-        url("../fonts/ttf/iranyekanwebboldfanum.ttf") format("truetype");
+    font-family: Vazir;
+    src: url("../fonts/eot/Vazir-Medium.eot");
+    src: url("../fonts/eot/Vazir-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/woff/Vazir-Medium.woff") format("woff"),
+        url("../fonts/ttf/Vazir-Medium.ttf") format("truetype");
     font-weight: bold;
 }
 
 @font-face {
-    font-family: IranYekan;
-    src: url("../fonts/eot/iranyekanweblightfanum.eot");
-    src: url("../fonts/eot/iranyekanweblightfanum.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/woff/iranyekanweblightfanum.woff") format("woff"),
-        url("../fonts/ttf/iranyekanweblightfanum.ttf") format("truetype");
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: IranYekan;
-    src: url("../fonts/eot/iranyekanwebmediumfanum.eot");
-    src: url("../fonts/eot/iranyekanwebmediumfanum.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/woff/iranyekanwebmediumfanum.woff") format("woff"),
-        url("../fonts/ttf/iranyekanwebmediumfanum.ttf") format("truetype");
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: IranYekan;
-    src: url("../fonts/eot/iranyekanwebthinfanum.eot");
-    src: url("../fonts/eot/iranyekanwebthinfanum.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/woff/iranyekanwebthinfanum.woff") format("woff"),
-        url("../fonts/ttf/iranyekanwebthinfanum.ttf") format("truetype");
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: IranYekan;
-    src: url("../fonts/eot/iranyekanwebblackfanum.eot");
-    src: url("../fonts/eot/iranyekanwebblackfanum.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/woff/iranyekanwebblackfanum.woff") format("woff"),
-        url("../fonts/ttf/iranyekanwebblackfanum.ttf") format("truetype");
-    font-weight: 900;
+    font-family: Vazir;
+    src: url("../fonts/eot/Vazir-Light.eot");
+    src: url("../fonts/eot/Vazir-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/woff/Vazir-Light.woff") format("woff"),
+        url("../fonts/ttf/Vazir-Light.ttf") format("truetype");
+    font-weight: lighter;
 }
 
 :root {
@@ -70,7 +37,7 @@
 
 body {
     font-size: 0.875rem;
-    font-family: IranYekan;
+    font-family: Vazir;
 }
 
 .feather {
@@ -205,7 +172,7 @@ body {
 }
 
 .ck {
-    font-family: IranYekan !important;
+    font-family: Vazir !important;
 }
 
 .portfolio-tools {
