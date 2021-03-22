@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 
 class AuthController extends AdminController
@@ -31,10 +33,15 @@ class AuthController extends AdminController
 
         $user = User::where('email', $input['email'])->first();
 
+
         if (!Hash::check($input['password'], $user->password)) {
             return back();
         }
 
+        Auth::login($user);
+        Log::info($user->email . ' logged in.');
+
+        # Old Method
         session()->put('auth', true);
         session()->put('id', $user->id);
         session()->put('name', $user->name);
@@ -46,6 +53,7 @@ class AuthController extends AdminController
 
     public function logout(Request $request)
     {
+        Auth::logout();
         session()->put('auth', false);
         session()->forget('id');
         session()->forget('name');
